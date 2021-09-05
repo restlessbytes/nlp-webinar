@@ -67,6 +67,7 @@ cover/
 *.tex
 *.zip
 .idea/*
+*.pdf
 
 # Django stuff:
 *.log
