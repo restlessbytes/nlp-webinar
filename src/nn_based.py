@@ -3,8 +3,8 @@ from typing import List
 
 from gensim.models.doc2vec import TaggedDocument, Doc2Vec
 
-from src.data_loaders import Review, load_amazon_train_test
-from src.utils import tokens, stopwords_english, review_text_stats, aggregate_sentiment_results, \
+from data_loaders import Review, load_amazon_train_test
+from utils import tokens, stopwords_english, review_text_stats, aggregate_sentiment_results, \
     print_information_table_markdown
 
 

@@ -7,7 +7,7 @@ from nltk.tokenize import TreebankWordTokenizer
 
 from re import sub
 
-from src.data_loaders import Review, POS, NEG
+from data_loaders import Review, POS, NEG
 
 COMMON = 'data/en_most_common.txt'
 COMMON_POL = 'data/en_common_words_polarity.csv'

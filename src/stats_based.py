@@ -4,10 +4,10 @@ from nltk import NaiveBayesClassifier
 
 from typing import List, Dict, Tuple
 
-from src.data_loaders import Review, load_amazon_train_test
+from data_loaders import Review, load_amazon_train_test
 from collections import Counter
 
-from src.utils import stopwords_english, tokens, review_text_stats, aggregate_sentiment_results, \
+from utils import stopwords_english, tokens, review_text_stats, aggregate_sentiment_results, \
     print_information_table_markdown
 
 
@@ -59,8 +59,8 @@ def run_test_on(train: List[Review], test: List[Review], review_source: str, fea
 
     correctly_predicted = 0
 
-    start = perf_counter()
     predictions = []
+    start = perf_counter()
     for feat_vector, sentiment, review in test:
         text_length, common_words = review_text_stats(review)
         cur_sentiment = classifier.classify(feat_vector)

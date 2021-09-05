@@ -3,8 +3,8 @@ from time import perf_counter
 from typing import List
 from collections import Counter
 
-from src.data_loaders import NEG, POS, Review, load_pos_neg_lookup, load_amazon_train_test
-from src.utils import stopwords_english, tokens, review_text_stats, aggregate_sentiment_results, \
+from data_loaders import NEG, POS, Review, load_pos_neg_lookup, load_amazon_train_test
+from utils import stopwords_english, tokens, review_text_stats, aggregate_sentiment_results, \
     print_information_table_markdown
 
 
