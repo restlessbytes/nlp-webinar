@@ -1,13 +1,14 @@
 # Webinar: Do you speak NLP? Ein Streifzug durch modernes Natural Language Processing mit Python
 
-Dieses Repo enthält die Präsentation, den verwendeten Code sowie Resourcen zum Webinar _"Do you speak NLP? Ein 
-Streifzug durch modernes Natural Language Processing mit Python"_ vom 31. August 2021.
+Dieses Repo enthält Präsentation, Python Code und Resourcen des Webinars 
 
-Im Folgenden ein kurzer Überblick über die Inhalte:
+_"Do you speak NLP? Ein Streifzug durch modernes Natural Language Processing mit Python"_ 
+
+vom 31. August 2021.
 
 ### Präsentation
 
-Die Präsentation basiert auf einem Jupyter Notebook, das mittels des (genialen!) [RISE Plugins](https://rise.readthedocs.io/en/stable/)
+Die Präsentation basiert auf einem Jupyter Notebook, das mittels des (_genialen_) [RISE Plugins](https://rise.readthedocs.io/en/stable/)
 in eine Slideshow (mit interaktiven Elementen) umgewandelt wurde / werden kann.
 
 Das Jupyter Notebook befindet sich im File `presentation.ipynb` und kann auch ohne RISE Plugins über 
@@ -16,9 +17,9 @@ Das Jupyter Notebook befindet sich im File `presentation.ipynb` und kann auch oh
 $ jupyter notebook presentation.ipyn
 ```
 
-betrachtet werden. 
+verwendet werden. 
 
-Wichtig bei der Verwendung als Slideshow ist es, dass sich das CSS-File `presentation.css` im selben Folder wie die 
+Wichtig bei der Verwendung als Slideshow ist, dass sich das CSS-File `presentation.css` im selben Folder wie die 
 Präsentation befindet.
 
 ### Source Code
@@ -51,13 +52,21 @@ Bitte stellen Sie sicher, dass die folgenden Dependencies installiert sind:
 
 #### Amazon Reviews Dataset
 
-Die Amazon-Reviews, die für die Tests verwendet wurden, sind **nicht** Teil dieses Projekts; das Dataset kann aber hier
+Die Amazon-Reviews, die für die Tests verwendet wurden, sind **nicht** Teil des Repositorys; das Dataset kann aber hier
 heruntergeladen werden:
 
 https://www.kaggle.com/arhamrumi/amazon-product-reviews
 
-Der Download kommt als zip-File "archive.zip". Entpacken Sie das zip-File und kopieren (oder verschieben) Sie das File
-`Reviews.csv` nach `data/`. Um es zu verwenden, benennen Sie es bitte noch um in `amazon_misc_products_reviews.csv`.
+Der Download kommt als zip-File "archive.zip". Bitte entpacken Sie das zip-File und kopieren (oder verschieben) Sie
+`Reviews.csv` nach `data/`. Bevor das Dataset verwendet werden kann, müssen noch die folgenden Änderungen daran 
+vorgenommen werden:
+
+1. Umbenennen: `Reviews.csv` --> `amazon_misc_products_reviews.csv`
+2. Die Headline des CSV-Files sollte wie folgt aussehen:
+
+```bash
+Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,rating,Time,title,text
+```
 
 #### Positive / Negative Words
 
