@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nlp-webinar"
+version = "0.1.0"
+description = "presentation and source code from the webinar \"Do you speak NLP?\""
+authors = ["restlessbytes <markus@restless-bytes.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.2"
+nltk = "^3.6.2"
+gensim = "^4.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
