@@ -1,8 +1,6 @@
 # Custom and project specific
-data/
 test_data/
 backup*/
-v1/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
