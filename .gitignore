@@ -61,6 +61,13 @@ cover/
 *.mo
 *.pot
 
+# Misc (especially LaTex)
+*.aux
+*.out
+*.tex
+*.zip
+.idea/*
+
 # Django stuff:
 *.log
 local_settings.py
