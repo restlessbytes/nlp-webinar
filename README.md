@@ -4,7 +4,9 @@ Dieses Repo enthält Präsentation, Python Code und Resourcen des Webinars
 
 _"Do you speak NLP? Ein Streifzug durch modernes Natural Language Processing mit Python"_ 
 
-vom 31. August 2021.
+vom 31. August 2021. Eine Live-Aufzeichnung des Webinars findet sich hier:
+
+https://its-people.de/do-you-speak-nlp
 
 ### Präsentation
 
